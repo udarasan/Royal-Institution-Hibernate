@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #C5E0FA;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.RoyalInstitution.StudentRegistrationSystem.controller.LoginFormController">
+   <children>
+      <Label layoutX="190.0" layoutY="83.0" text="LOGIN ACCOUNT">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserName" layoutX="173.0" layoutY="160.0" prefHeight="39.0" prefWidth="254.0" promptText="User Name" text="udara" />
+      <TextField fx:id="txtPassword" layoutX="173.0" layoutY="208.0" prefHeight="39.0" prefWidth="254.0" promptText="Password" />
+      <JFXButton buttonType="RAISED" layoutX="173.0" layoutY="270.0" onAction="#loginOnAction" prefHeight="39.0" prefWidth="254.0" ripplerFill="WHITE" style="-fx-background-color: #3296FA;" text="LOG IN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <PasswordField fx:id="pwdPassword" layoutX="172.0" layoutY="208.0" prefHeight="39.0" prefWidth="254.0" promptText="Password" text="1234" />
+      <ImageView fitHeight="20.0" fitWidth="21.0" layoutX="395.0" layoutY="219.0" onMousePressed="#eyeClickAction" onMouseReleased="#eyeClickExitAction" opacity="0.33" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icons8-phone-50.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="173.0" layoutY="315.0" onAction="#signupOnAction" prefHeight="39.0" prefWidth="254.0" ripplerFill="WHITE" style="-fx-background-color: #47F391;" text="Sign Up &amp; Forgot Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="504.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.RoyalInstitution.StudentRegistrationSystem.controller.RegistrationFormController">
+   <children>
+      <TextField fx:id="txtRegID" disable="true" layoutX="196.0" layoutY="115.0" prefHeight="26.0" prefWidth="186.0" promptText="Registration ID" />
+      <TextField fx:id="txtStudentFee" layoutX="196.0" layoutY="223.0" prefHeight="26.0" prefWidth="186.0" promptText="Student Fee" />
+      <TextField fx:id="txtStudentId" layoutX="196.0" layoutY="271.0" prefHeight="26.0" prefWidth="186.0" promptText="Student Id" />
+      <TextField fx:id="txtCourseId" layoutX="196.0" layoutY="325.0" prefHeight="26.0" prefWidth="186.0" promptText="Course Id" />
+      <DatePicker fx:id="txtRegDate" layoutX="196.0" layoutY="166.0" prefHeight="26.0" prefWidth="186.0" promptText="Reg. Date" />
+      <TableView fx:id="tblRegistration" layoutX="432.0" layoutY="75.0" prefHeight="395.0" prefWidth="653.0">
+        <columns>
+          <TableColumn fx:id="colRID" prefWidth="75.0" text="RID" />
+          <TableColumn fx:id="colDate" prefWidth="136.0" text="Date" />
+            <TableColumn fx:id="colStudentFee" prefWidth="188.79998779296875" text="Student Fee" />
+            <TableColumn fx:id="colStudentID" prefWidth="116.7999267578125" text="Student ID" />
+            <TableColumn fx:id="colCourseID" prefWidth="135.99996337890627" text="Course ID" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="196.0" layoutY="380.0" onAction="#saveOnAction" prefHeight="32.0" prefWidth="186.0" style="-fx-background-color: #67F0A9;" text="Pay" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <Label layoutX="783.0" layoutY="14.0" text="REGISTRATION FORM">
+         <font>
+            <Font name="Arial Bold" size="28.0" />
+         </font>
+      </Label>
+      <Text layoutX="36.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration ID">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="36.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration DATE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="36.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration FEE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="36.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="36.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course ID">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
